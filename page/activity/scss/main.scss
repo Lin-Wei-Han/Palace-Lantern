@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+html{
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+    font-size: 62.5%;
+}
+
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: auto;
+  }
+  
+  .navbar {
+    position: fixed;
+    width: 100%;
+    //background: crimson;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 3rem 0;
+    transition: all 0.3s ease;
+    z-index: 9999;
+    white-space: nowrap;
+  
+    .max-width {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+    }
+    
+    .menu{
+        padding-left: 50rem;
+    }
+  
+    .menu li {
+      list-style: none;
+      display: inline-block;
+      a {
+        color: rgb(46, 46, 46);
+        font-family: 'Noto Sans SC';
+        font-size: 2rem;
+        font-weight: 600;
+        margin-left: 2.5rem;
+        transition: color 0.3s ease;
+       
+  
+        &:hover {
+          color: rgb(255, 255, 255);
+        }
+      }
+    }
+  
+    .logo a {
+      color: rgb(46, 46, 46);
+      font-size: 3.5rem;
+      font-weight: 600;
+      font-family: 'Rubik', sans-serif;
+
+      img{
+        width:5rem;
+        vertical-align:middle
+      }
+  
+      span {
+        color: rgb(255, 255, 255);
+      }
+    }
+  }
+  
+  /* navbar-sticky */
+  .navbar.sticky {
+    padding: 15px 0;
+    background: rgba(42, 42, 42, 0.8);
+    backdrop-filter: blur(30px);
+  
+    .logo a {
+      color: #F28482;
+      transition: all 0.3s ease;
+  
+      span {
+        color: #fff;
+        transition: all 0.3s ease;
+      }
+    }
+  
+    .menu li a {
+      color: #fff;
+  
+      &:hover {
+        color: #F28482;
+      }
+    }
+  }
+
+  .menu-btn {
+    color: #fff;
+    cursor: pointer;
+    display:none;
+  }
+
+  .choose-content{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 90vh;
+
+      .choose-left{
+          background-color: #f6bd60;
+
+          .text{
+            margin-top: 50vh;
+            transform: translateY(-50%);
+          }
+          h1{
+            font-family: 'Noto Sans SC';
+            color: rgb(60, 60, 60);
+            font-size: 7rem;
+            font-weight: 600;
+            text-align: center;
+          }
+
+          &:hover{
+              z-index: 999;
+              animation: animate 1s ;
+              animation-fill-mode:forwards;
+              transition: all 1s ;
+          }
+
+          @keyframes animate {
+            0% {
+                width: 100%;
+            }
+            100% {
+                width: 110%;
+            }
+        }
+      }
+
+      .choose-right{
+          background-color: #f7ede2;
+
+          .text{
+            margin-top: 50vh;
+            transform: translateY(-50%);
+          }
+          h1{
+            font-family: 'Noto Sans SC';
+            color: rgb(60, 60, 60);
+            font-size: 7rem;
+            font-weight: 600;
+            text-align: center;
+          }
+
+          &:hover{
+            z-index: 999;
+            animation: animate 1s ;
+            animation-fill-mode:forwards;
+            transition: all 1s ;
+            
+        }
+
+        @keyframes animate {
+          0% {
+              width: 100%;
+          }
+          100% {
+              width: 110%;
+          }
+      }
+      
+      
+      }
+  }
+
+  footer {
+    background: rgb(60, 60, 60);
+    padding: 3rem 2rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    bottom: 0;
+    height: 10vh;
+    z-index: 999;
+
+  }
+  footer span a {
+    color: #F28482;
+    text-decoration: none;
+  }
+  footer span a:hover {
+    text-decoration: underline;
+  }

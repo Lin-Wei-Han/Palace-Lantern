@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none; }
+
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%; }
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 10px;
+  margin: auto; }
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 3rem 0;
+  transition: all 0.3s ease;
+  z-index: 9999;
+  white-space: nowrap; }
+  .navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem; }
+  .navbar .menu {
+    padding-left: 50rem; }
+  .navbar .menu li {
+    list-style: none;
+    display: inline-block; }
+    .navbar .menu li a {
+      color: #2e2e2e;
+      font-family: 'Noto Sans SC';
+      font-size: 2rem;
+      font-weight: 600;
+      margin-left: 2.5rem;
+      transition: color 0.3s ease; }
+      .navbar .menu li a:hover {
+        color: white; }
+  .navbar .logo a {
+    color: #2e2e2e;
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: 'Rubik', sans-serif; }
+    .navbar .logo a img {
+      width: 5rem;
+      vertical-align: middle; }
+    .navbar .logo a span {
+      color: #2e2e2e; }
+
+/* navbar-sticky */
+.navbar.sticky {
+  padding: 15px 0;
+  background: rgba(42, 42, 42, 0.8);
+  backdrop-filter: blur(30px); }
+  .navbar.sticky .logo a {
+    color: #F28482;
+    transition: all 0.3s ease; }
+    .navbar.sticky .logo a span {
+      color: #fff;
+      transition: all 0.3s ease; }
+  .navbar.sticky .menu li a {
+    color: #fff; }
+    .navbar.sticky .menu li a:hover {
+      color: #F28482; }
+
+.menu-btn {
+  color: #fff;
+  cursor: pointer;
+  display: none; }
+
+.section-content {
+  text-align: center;
+  padding: 12.3rem 0;
+  height: 90vh; }
+  .section-content img {
+    width: 70rem; }
+
+footer {
+  background: #3c3c3c;
+  padding: 3rem 2rem;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+  height: 10vh; }
+
+footer span a {
+  color: #F28482;
+  text-decoration: none; }
+
+footer span a:hover {
+  text-decoration: underline; }
