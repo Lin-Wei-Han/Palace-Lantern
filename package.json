@@ -4,7 +4,7 @@
   "main": "index.js",
   "homepage": "https://tkudebate.github.io/Palace-Lantern",
   "scripts": {
-    "build-css": "node-sass -w page/activity/small_Palace/scss/main.scss page/activity/small_Palace/css/main.css",
+    "build-css": "node-sass -w scss/main.scss css/main.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
