@@ -148,9 +148,9 @@ html {
     letter-spacing: 1px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); }
-  .section-home .btns a:first-child {
+  .section-home .btns div a:first-child {
     background: linear-gradient(90deg, #F6BD60 0%, #FFDB9F 100%); }
-  .section-home .btns a:last-child {
+  .section-home .btns .div2 a:last-child {
     background: linear-gradient(90deg, #FDEAD5 0%, #FFFBF7 100%); }
   .section-home .btns a > span {
     position: absolute;
@@ -502,7 +502,7 @@ footer span a:hover {
 /**************************/
 @media (max-width: 44em) {
   main {
-    width: 704px; }
+    max-width: 704px; }
   .navbar .logo a {
     font-size: 3rem; }
     .navbar .logo a img {
@@ -533,6 +533,35 @@ footer span a:hover {
 /**************************/
 /* BELOW 544px (Phones) */
 /**************************/
+@media (max-width: 34em) {
+  .navbar {
+    width: 500px; }
+    .navbar .max-width {
+      margin-left: 1rem;
+      width: 544px; }
+    .navbar .logo {
+      display: none; }
+    .navbar .menu {
+      max-width: 400px; }
+  .section-home {
+    height: 27rem; }
+    .section-home .max-width {
+      margin: 10rem 0; }
+    .section-home .hero-content .text-1 {
+      font-size: 8rem;
+      padding-left: 1rem; }
+    .section-home .hero-content .text-2 {
+      font-size: 2.5rem;
+      padding-left: 1.5rem; }
+    .section-home .grid-home-left {
+      padding-right: 30rem; }
+    .section-home .btns {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-left: 5rem; }
+      .section-home .btns div {
+        padding-top: 2rem; } }
+
 /* 
 - Font sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98

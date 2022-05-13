@@ -194,10 +194,10 @@ html{
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   }
-  .btns a:first-child{
+  .btns div a:first-child{
     background: linear-gradient(90deg, #F6BD60 0%, #FFDB9F 100%);
   }
-  .btns a:last-child{
+  .btns .div2 a:last-child{
     background: linear-gradient(90deg, #FDEAD5 0%, #FFFBF7 100%);
   }
   .btns a > span{
@@ -767,7 +767,7 @@ html{
 /**************************/
 @media (max-width: 44em) {
   main{
-    width: 704px ;
+    max-width: 704px ;
   }
   .navbar {
     .logo a {
@@ -828,6 +828,51 @@ html{
 /**************************/
 
 @media (max-width: 34em) {
+
+  .navbar{
+    width:500px;
+    .max-width{
+      margin-left: 1rem;
+      width: 544px;
+    }
+    .logo{
+      display: none;
+    }
+    .menu{
+      max-width: 400px;
+    }
+  }
+
+  .section-home {
+    height: 27rem;
+    .max-width{
+      margin: 10rem 0;
+    }
+  
+    .hero-content .text-1 {
+      font-size: 8rem;
+      padding-left: 1rem;
+    }
+    .hero-content .text-2 {
+      font-size: 2.5rem;
+      padding-left: 1.5rem;
+    }
+
+  .grid-home-left{
+    padding-right:30rem ;
+  }
+
+  //button
+  .btns{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 5rem;
+    div{
+      padding-top: 2rem;
+    }
+  }
+
+  }
 }
 
 /* 
