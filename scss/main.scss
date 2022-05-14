@@ -13,6 +13,26 @@
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
+/* custom scroll bar */
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 
 html{
   /* font-size: 10px; */
@@ -844,9 +864,11 @@ html{
   }
 
   .section-home {
+    width:100%;
     height: 27rem;
     .max-width{
       margin: 10rem 0;
+      max-width: 340px;
     }
   
     .hero-content .text-1 {
@@ -872,6 +894,47 @@ html{
     }
   }
 
+  }
+  .section-Newactivity{
+    .Newactivity-header{
+      grid-template-columns: 20fr 60fr 20fr;
+  
+      .grid-Newactivity-left{
+        height: 4px;
+      }
+  
+      .grid-Newactivity-right{
+        height: 4px;
+      }
+    }
+    .Newactivity-bottom{
+      height: 4px;
+    }
+
+    .Newactivity-body{
+      .slider{
+        width: 400px;
+        height: 270px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      
+      
+      .slide img{
+        width: 375px;
+        height: 270px;
+      }
+  
+      .navigation-auto{
+        width: 400px;
+        margin-top: 240px;
+      }
+      .navigation-manual{
+        width: 400px;
+        margin-top: -260px;
+      }
+  
+    }
   }
 }
 
