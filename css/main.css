@@ -365,6 +365,9 @@ html {
   .section-contact .contact-content {
     padding: 6rem 0;
     text-align: center; }
+    .section-contact .contact-content iframe {
+      width: 400px;
+      height: 400px; }
 
 footer {
   background: #3c3c3c;
@@ -511,8 +514,7 @@ footer span a:hover {
     width: 18rem; }
   footer {
     padding: 2rem 2rem;
-    font-size: 1.5rem;
-    width: 704px; } }
+    font-size: 1.5rem; } }
 
 /**************************/
 /* BELOW 704px (Smaller tablets) */
@@ -601,7 +603,42 @@ footer span a:hover {
     margin-top: 240px; }
   .section-Newactivity .Newactivity-body .navigation-manual {
     width: 400px;
-    margin-top: -260px; } }
+    margin-top: -260px; }
+  .section-special .title {
+    font-size: 3rem;
+    padding: 2rem 0; }
+  .section-special .special-content .special-line1 .grid-special-left iframe {
+    width: 300px;
+    height: 150px; }
+  .section-special .special-content .special-line1 .grid-special-right {
+    padding: 2rem 1rem; }
+    .section-special .special-content .special-line1 .grid-special-right h1 {
+      font-size: 1.4rem; }
+    .section-special .special-content .special-line1 .grid-special-right p {
+      font-size: 1rem; }
+  .section-special .special-content .special-line2 {
+    padding-top: 2rem; }
+    .section-special .special-content .special-line2 .grid-special-left {
+      padding: 2rem 1rem; }
+      .section-special .special-content .special-line2 .grid-special-left h1 {
+        font-size: 1.4rem; }
+      .section-special .special-content .special-line2 .grid-special-left p {
+        font-size: 1rem; }
+    .section-special .special-content .special-line2 .grid-special-right iframe {
+      width: 300px;
+      height: 150px; }
+  .section-contact .title {
+    font-size: 3rem; }
+  .section-contact .title2 {
+    font-size: 1.8rem; }
+  .section-contact img {
+    width: 12rem; }
+  .section-contact .contact-content iframe {
+    width: 360px;
+    height: 350px; }
+  footer {
+    padding: 2rem 2rem;
+    font-size: 1rem; } }
 
 /* 
 - Font sizes (px)
