@@ -16,7 +16,7 @@
 /* custom scroll bar */
 body {
   overflow-y: scroll;
-  overflow-x: hidden; }
+  overflow-x: visible; }
 
 ::-webkit-scrollbar {
   width: 10px; }
@@ -519,9 +519,7 @@ footer span a:hover {
 /**************************/
 /* BELOW 704px (Smaller tablets) */
 /**************************/
-@media (max-width: 44em) {
-  main {
-    max-width: 704px; }
+@media (min-width: 544px) and (max-width: 44em) {
   .navbar .logo a {
     font-size: 3rem; }
     .navbar .logo a img {
@@ -552,22 +550,16 @@ footer span a:hover {
 /**************************/
 /* BELOW 544px (Phones) */
 /**************************/
-@media (max-width: 34em) {
-  .navbar {
-    width: 500px; }
-    .navbar .max-width {
-      margin-left: 1rem;
-      width: 544px; }
-    .navbar .logo {
-      display: none; }
-    .navbar .menu {
-      max-width: 400px; }
+@media (min-width: 360px) and (max-width: 544px) {
+  main {
+    max-width: 500px; }
+  .navbar .logo {
+    display: none; }
   .section-home {
-    width: 100%;
+    background: #F28482;
     height: 27rem; }
     .section-home .max-width {
-      margin: 10rem 0;
-      max-width: 340px; }
+      margin: 10rem 0; }
     .section-home .hero-content .text-1 {
       font-size: 8rem;
       padding-left: 1rem; }

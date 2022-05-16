@@ -17,7 +17,7 @@
 
 body {
   overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-x: visible;
 }
 
 ::-webkit-scrollbar {
@@ -789,10 +789,8 @@ html{
 /**************************/
 /* BELOW 704px (Smaller tablets) */
 /**************************/
-@media (max-width: 44em) {
-  main{
-    max-width: 704px ;
-  }
+@media (min-width: 544px) and (max-width: 44em) {
+
   .navbar {
     .logo a {
       font-size: 3rem;
@@ -851,28 +849,22 @@ html{
 /* BELOW 544px (Phones) */
 /**************************/
 
-@media (max-width: 34em) {
+@media (min-width: 360px) and (max-width: 544px) {
+  main{
+    max-width: 500px;
+  }
 
   .navbar{
-    width:500px;
-    .max-width{
-      margin-left: 1rem;
-      width: 544px;
-    }
     .logo{
       display: none;
-    }
-    .menu{
-      max-width: 400px;
     }
   }
 
   .section-home {
-    width:100%;
+    background: #F28482;
     height: 27rem;
     .max-width{
       margin: 10rem 0;
-      max-width: 340px;
     }
   
     .hero-content .text-1 {

@@ -14,6 +14,7 @@ $(document).ready(function(){
         }
     });
 
+
     $(function(){
         if($(window).width()<944){ //當視窗小於944時才運作
         $('.navbar a').on('click', function(){
