@@ -142,7 +142,8 @@ html{
 
     .hero-content{
       display: grid;
-      grid-template-columns: 55fr 45fr;
+      grid-template-columns: 80fr 20fr;
+      width: 90vw;
     }
   
     .hero-content .text-1 {

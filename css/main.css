@@ -109,7 +109,8 @@ html {
   white-space: nowrap; }
   .section-home .hero-content {
     display: grid;
-    grid-template-columns: 55fr 45fr; }
+    grid-template-columns: 80fr 20fr;
+    width: 90vw; }
   .section-home .hero-content .text-1 {
     font-weight: 600;
     font-size: 14rem;
