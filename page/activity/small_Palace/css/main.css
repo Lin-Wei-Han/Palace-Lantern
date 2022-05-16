@@ -388,7 +388,7 @@ footer span a:hover {
 /**************************/
 @media (max-width: 75em) {
   .section-hero .hero-content .hero-menu {
-    padding-top: 10rem; }
+    padding-top: 2rem; }
     .section-hero .hero-content .hero-menu .center {
       grid-template-columns: 1fr; }
     .section-hero .hero-content .hero-menu li {
@@ -483,6 +483,8 @@ footer span a:hover {
 /* BELOW 704px (Smaller tablets) */
 /**************************/
 @media (max-width: 44em) {
+  .section-hero .hero-content .text {
+    padding-top: 14rem; }
   .section-information .information-content .information-header {
     grid-template-columns: 25fr 50fr 25fr; }
   .section-information .information-content .information-body .grid-information-bodyleft img {

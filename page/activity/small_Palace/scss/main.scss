@@ -566,7 +566,7 @@ html{
   .section-hero{
     .hero-content{
       .hero-menu{
-        padding-top: 10rem;
+        padding-top: 2rem;
         .center{
           grid-template-columns: 1fr;
         }
@@ -744,6 +744,14 @@ html{
 /**************************/
 
 @media (max-width: 44em) {
+  .section-hero{
+    .hero-content{
+      .text{
+        padding-top: 14rem;
+      }
+    }
+  }
+
   .section-information{
     .information-content{
       .information-header{
