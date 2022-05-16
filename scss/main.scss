@@ -676,7 +676,7 @@ html{
       }
 
       .grid-home-left{
-        padding-right: 5rem;
+        padding-right: 0rem;
       }
       
     }
@@ -849,15 +849,19 @@ html{
 /* BELOW 544px (Phones) */
 /**************************/
 
-@media (min-width: 360px) and (max-width: 544px) {
-  main{
-    max-width: 500px;
-  }
+@media (min-width: 350px) and (max-width: 544px) {
 
   .navbar{
+    width: 100vw;
     .logo{
       display: none;
     }
+    .menu {
+      width: 100vw;
+    }
+  }
+  .navbar.sticky{
+    width: 100vw;
   }
 
   .section-home {
@@ -865,21 +869,25 @@ html{
     height: 27rem;
     .max-width{
       margin: 10rem 0;
+      padding-right: 0;
     }
   
-    .hero-content .text-1 {
+    .hero-content{
+      width: 260px;
+    } 
+    .text-1 {
       font-size: 8rem;
       padding-left: 1rem;
     }
     .hero-content .text-2 {
+      display: none;
       font-size: 2.5rem;
       padding-left: 1.5rem;
     }
 
   .grid-home-left{
-    padding-right:30rem ;
+    padding:0 ;
   }
-
   //button
   .btns{
     display: grid;
@@ -909,7 +917,7 @@ html{
 
     .Newactivity-body{
       .slider{
-        width: 400px;
+        width: 100vw;
         height: 270px;
         border-radius: 10px;
         overflow: hidden;
@@ -922,11 +930,11 @@ html{
       }
   
       .navigation-auto{
-        width: 400px;
+        width: 95vw;
         margin-top: 240px;
       }
       .navigation-manual{
-        width: 400px;
+        width: 95vw;
         margin-top: -260px;
       }
   
@@ -989,8 +997,8 @@ html{
     }
     .contact-content{
       iframe{
-        width: 360px;
-        height: 350px;
+        width: 340px;
+        height: 330px;
       }
     }
   }

@@ -458,7 +458,7 @@ footer span a:hover {
   .section-home .hero-content .text-2 {
     font-size: 4rem; }
   .section-home .hero-content .grid-home-left {
-    padding-right: 5rem; }
+    padding-right: 0rem; }
   .navbar .max-width {
     padding: 0 3rem; }
   .navbar .logo a {
@@ -550,24 +550,32 @@ footer span a:hover {
 /**************************/
 /* BELOW 544px (Phones) */
 /**************************/
-@media (min-width: 360px) and (max-width: 544px) {
-  main {
-    max-width: 500px; }
-  .navbar .logo {
-    display: none; }
+@media (min-width: 350px) and (max-width: 544px) {
+  .navbar {
+    width: 100vw; }
+    .navbar .logo {
+      display: none; }
+    .navbar .menu {
+      width: 100vw; }
+  .navbar.sticky {
+    width: 100vw; }
   .section-home {
     background: #F28482;
     height: 27rem; }
     .section-home .max-width {
-      margin: 10rem 0; }
-    .section-home .hero-content .text-1 {
+      margin: 10rem 0;
+      padding-right: 0; }
+    .section-home .hero-content {
+      width: 260px; }
+    .section-home .text-1 {
       font-size: 8rem;
       padding-left: 1rem; }
     .section-home .hero-content .text-2 {
+      display: none;
       font-size: 2.5rem;
       padding-left: 1.5rem; }
     .section-home .grid-home-left {
-      padding-right: 30rem; }
+      padding: 0; }
     .section-home .btns {
       display: grid;
       grid-template-columns: 1fr;
@@ -583,7 +591,7 @@ footer span a:hover {
   .section-Newactivity .Newactivity-bottom {
     height: 4px; }
   .section-Newactivity .Newactivity-body .slider {
-    width: 400px;
+    width: 100vw;
     height: 270px;
     border-radius: 10px;
     overflow: hidden; }
@@ -591,10 +599,10 @@ footer span a:hover {
     width: 375px;
     height: 270px; }
   .section-Newactivity .Newactivity-body .navigation-auto {
-    width: 400px;
+    width: 95vw;
     margin-top: 240px; }
   .section-Newactivity .Newactivity-body .navigation-manual {
-    width: 400px;
+    width: 95vw;
     margin-top: -260px; }
   .section-special .title {
     font-size: 3rem;
@@ -626,8 +634,8 @@ footer span a:hover {
   .section-contact img {
     width: 12rem; }
   .section-contact .contact-content iframe {
-    width: 360px;
-    height: 350px; }
+    width: 340px;
+    height: 330px; }
   footer {
     padding: 2rem 2rem;
     font-size: 1rem; } }
